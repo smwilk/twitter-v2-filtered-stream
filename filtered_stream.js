@@ -5,6 +5,7 @@ const client = new TwitterApi("{Your Bearer Token}");
 // Add rules
 const addRules = await client.v2.updateStreamRules({
   add: [
+    // Updte `Twitter` if you want to set a different keyword
     { value: 'Twitter', tag: 'tw' },
   ],
 });
